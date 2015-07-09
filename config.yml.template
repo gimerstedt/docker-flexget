@@ -1,0 +1,27 @@
+templates:
+  tv:
+    series:
+      settings:
+        tv:
+          propers: 3 days
+          quality: 720p+
+          set:
+            path: /torrents
+      tv:
+        - startalk
+        - cosmos
+        - archer
+        - the daily show
+
+    download: /torrents
+
+tasks:
+  some.site.org:
+    priority: 1
+    rss: http://rss.some.site.org
+    template: tv
+
+schedules:
+  - tasks: [some.site.org]
+    schedule:
+      minute: "*/30"
