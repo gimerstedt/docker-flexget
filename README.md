@@ -17,3 +17,4 @@ simple docker image based on phusion/baseimage that runs flexget to collect torr
 - iter: all of the above
 
 ## out of scope
+a more detail explanation of usage
